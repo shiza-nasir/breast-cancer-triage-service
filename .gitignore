@@ -1,0 +1,12 @@
+
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.dvc/cache/
+.env
+.env.*
+!.env.example
+artifacts/
+models/
+*.log
