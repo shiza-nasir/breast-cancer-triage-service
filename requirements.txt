@@ -1,4 +1,9 @@
 
 dvc==3.59.2
-pandas==2.3.3
-scikit-learn==1.7.2
+pathspec==0.12.1
+pandas
+scikit-learn
+joblib
+PyYAML
+fastapi
+uvicorn[standard]

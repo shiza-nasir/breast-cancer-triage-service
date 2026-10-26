@@ -1,0 +1,16 @@
+
+seed: 42
+
+train:
+  test_size: 0.2
+  cv_folds: 5
+  malignant_recall_min: 0.95
+
+  logistic_regression:
+    C: 1.0
+    max_iter: 3000
+
+  random_forest:
+    n_estimators: 400
+    max_depth: null
+    min_samples_leaf: 1

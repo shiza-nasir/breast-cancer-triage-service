@@ -1,0 +1,16 @@
+
+stages:
+  train:
+    cmd: python training/train.py --data-path data/raw/breast_cancer.csv --output-dir models --model-version 2.0.0
+    deps:
+      - training/train.py
+      - data/raw/breast_cancer.csv
+    params:
+      - seed
+      - train
+    outs:
+      - models/model.joblib
+      - models/model_card.json
+    metrics:
+      - reports/metrics.json:
+          cache: false
